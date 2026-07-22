@@ -516,12 +516,6 @@ document.querySelectorAll('.legend .item').forEach(el=>{
   el.addEventListener('click', ()=> selectRegion(el.dataset.region));
 });
 
-// ---- reveal mouse organ marker on scroll into view ----
-const mouseWrap = document.getElementById('mouseWrap');
-new IntersectionObserver((entries)=>{
-  entries.forEach(e=>{ if(e.isIntersecting) setTimeout(()=>mouseWrap.classList.add('reveal'), 500); });
-},{threshold:0.5}).observe(mouseWrap);
-
 // ---- breadcrumb + progress dots on scroll ----
 const crumbMap = {hero:"C57BL/6 · MOUSE", tissues:"C57BL/6 › TISSUE SELECT", spleen:"C57BL/6 › SPLEEN › H&E"};
 const dots = document.querySelectorAll('.dot-progress i');
