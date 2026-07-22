@@ -93,11 +93,6 @@ h1.title em{ font-style:normal; color:var(--violet); }
 .scroll-cue .line{ width:1px; height:34px; background:linear-gradient(var(--ink-faint), transparent); animation:pulse 2s infinite; }
 @keyframes pulse{ 0%,100%{opacity:.3} 50%{opacity:1} }
 
-/* mouse silhouette parts */
-.mouse-body{ fill:none; stroke:var(--ink); stroke-width:1.4; }
-.mouse-organ{ fill:var(--violet); opacity:0; transition:opacity .5s; }
-.mouse-wrap.reveal .mouse-organ{ opacity:0.85; }
-
 /* ---------- TISSUE GRID ---------- */
 #tissues{ padding:140px 24px 120px; max-width:1100px; margin:0 auto; }
 .section-head{ margin-bottom:56px; max-width:60ch; }
@@ -207,8 +202,41 @@ footer{ text-align:center; padding:60px 24px 50px; font-family:var(--mono); font
   <h1 class="title">A spatial map of the <em>immunopeptidome</em></h1>
   <p class="subtitle">Laser microdissected regions of the mouse spleen, profiled for MHC-bound peptides and proteins — region by region, not cell by cell.</p>
 
-  <div class="mouse-wrap" id="mouseWrap">
-    <svg viewBox="0 0 420 220" xmlns="http://www.w3.org/2000/svg">
+  .mouse{
+    width:min(520px,75vw);
+    margin:40px auto;
+    display:flex;
+    justify-content:center;
+}
+
+.mouse img{
+    width:100%;
+    height:auto;
+    display:block;
+    object-fit:contain;
+
+    /* Optional effects */
+    filter:drop-shadow(0 12px 24px rgba(0,0,0,.18));
+    transition:transform .3s ease;
+}
+
+.mouse:hover img{
+    transform:scale(1.02);
+}
+
+.scroll-cue{
+    font-family:var(--mono);
+    font-size:11px;
+    color:var(--ink-faint);
+    letter-spacing:0.1em;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:10px;
+    cursor:pointer;
+    background:none;
+    border:none;
+}
       <!-- minimal line-art mouse, side view -->
       <path class="mouse-body" d="M40,150 C30,110 55,70 110,60 C130,56 145,44 160,40 C168,38 176,42 176,50 C176,58 168,62 160,64
         C185,66 230,72 265,90 C300,108 330,110 355,100
