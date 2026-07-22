@@ -83,7 +83,7 @@ h1.title em{ font-style:normal; color:var(--violet); }
   margin-bottom:44px;
 }
 
-/* mouse hero image1 */
+/* mouse hero image */
 .mouse-wrap{
   width:min(700px,80vw);
   margin-bottom:44px;
@@ -94,7 +94,9 @@ h1.title em{ font-style:normal; color:var(--violet); }
 .hero-mouse{
   width:100%;
   height:auto;
+  aspect-ratio:400/235;
   display:block;
+  border:none;
   object-fit:contain;
   filter:drop-shadow(0 20px 35px rgba(0,0,0,.25));
   transition:transform .4s ease;
@@ -217,19 +219,12 @@ footer{ text-align:center; padding:60px 24px 50px; font-family:var(--mono); font
   <div class="eyebrow">Wild type · C57BL/6 · spleen</div>
   <h1 class="title">A spatial map of the <em>immunopeptidome</em></h1>
   <p class="subtitle">Laser microdissected regions of the mouse spleen, profiled for MHC-bound peptides and proteins — region by region, not cell by cell.</p>
-  <!-- THIS IS YOUR PNG -->
+
   <div class="mouse-wrap" id="mouseWrap">
-      <img src="mouse.png"
-           alt="C57BL/6 Mouse"
-           class="hero-mouse">
+    <object type="image/svg+xml" data="mouse-organs.svg" class="hero-mouse" aria-label="Interactive mouse anatomy diagram — hover to identify organs, click to view data">
+      <img src="mouse.png" alt="C57BL/6 mouse">
+    </object>
   </div>
-
-  <button class="scroll-cue" onclick="document.getElementById('tissues').scrollIntoView()">
-      <span>BEGIN</span>
-      <span class="line"></span>
-  </button>
-
-</section>
 
   <button class="scroll-cue" onclick="document.getElementById('tissues').scrollIntoView()">
     <span>BEGIN</span>
