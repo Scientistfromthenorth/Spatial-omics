@@ -1,0 +1,203 @@
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Organ Data — Mouse Anatomy</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap');
+
+:root{
+  --bg:#08080a;
+  --bg-panel:#111114;
+  --line:#232328;
+  --ink:#ECEAE6;
+  --ink-dim:#8B8A93;
+  --ink-faint:#57565f;
+  --display:'Space Grotesk',sans-serif;
+  --body:'Inter',sans-serif;
+  --mono:'IBM Plex Mono',monospace;
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);}
+header{
+  position:sticky; top:0; z-index:10;
+  background:rgba(8,8,10,.92); backdrop-filter:blur(6px);
+  border-bottom:1px solid var(--line);
+  padding:16px 32px; font-family:var(--mono); font-size:11px; letter-spacing:.08em; color:var(--ink-dim);
+}
+header b{ color:var(--ink); }
+main{ max-width:820px; margin:0 auto; padding:40px 24px 120px; }
+
+.organ-section{
+  border-top:1px solid var(--line);
+  padding:56px 0;
+  scroll-margin-top:70px;
+}
+.organ-section:first-of-type{ border-top:none; }
+.organ-section .tag{
+  font-family:var(--mono); font-size:10.5px; letter-spacing:.1em; text-transform:uppercase;
+  color:var(--accent); margin-bottom:12px; display:inline-block;
+}
+.organ-section h2{ font-family:var(--display); font-size:2rem; font-weight:600; margin-bottom:16px; }
+.organ-section p{ color:var(--ink-dim); line-height:1.7; font-size:15px; max-width:62ch; margin-bottom:24px; }
+
+.stat-row{ display:grid; grid-template-columns:repeat(3,1fr); gap:1px; background:var(--line); border:1px solid var(--line); margin-top:8px; }
+.stat{ background:var(--bg-panel); padding:18px 18px; }
+.stat .val{ font-family:var(--display); font-size:1.5rem; font-weight:600; }
+.stat .lab{ font-family:var(--mono); font-size:10px; color:var(--ink-dim); letter-spacing:.06em; text-transform:uppercase; margin-top:4px; }
+
+.sample-tag{
+  display:inline-block; margin-top:20px;
+  font-family:var(--mono); font-size:10px; letter-spacing:.08em; color:var(--bg);
+  background:var(--ink-dim); padding:4px 8px; border-radius:2px; text-transform:uppercase;
+}
+
+nav.jump{ display:flex; flex-wrap:wrap; gap:8px; padding:24px 0 0; }
+nav.jump a{
+  font-family:var(--mono); font-size:11px; letter-spacing:.05em; text-transform:uppercase;
+  color:var(--ink-dim); border:1px solid var(--line); padding:6px 12px; border-radius:2px; text-decoration:none;
+}
+nav.jump a:hover{ color:var(--ink); border-color:var(--ink-dim); }
+</style>
+</head>
+<body>
+
+<header>SPECIMEN <b>C57BL/6 · MOUSE</b> &nbsp;›&nbsp; ORGAN DATA</header>
+
+<main>
+  <nav class="jump">
+    <a href="#brain">Brain</a>
+    <a href="#lungs">Lungs</a>
+    <a href="#heart">Heart</a>
+    <a href="#liver">Liver</a>
+    <a href="#pancreas">Pancreas</a>
+    <a href="#spleen">Spleen</a>
+    <a href="#stomach">Stomach</a>
+    <a href="#intestines">Intestines</a>
+    <a href="#kidneys">Kidneys</a>
+    <a href="#bladder">Bladder</a>
+  </nav>
+
+  <section class="organ-section" id="brain" style="--accent:#C7BEE3">
+    <span class="tag" style="color:#C7BEE3">Central nervous system</span>
+    <h2>Brain</h2>
+    <p>Coordinates sensory processing, motor control, and homeostatic regulation. A common target tissue for CNS proteomics and neuroimmune studies in mouse models.</p>
+    <div class="stat-row">
+      <div class="stat"><div class="val">—</div><div class="lab">Peptides</div></div>
+      <div class="stat"><div class="val">—</div><div class="lab">Proteins</div></div>
+      <div class="stat"><div class="val">—</div><div class="lab">Samples</div></div>
+    </div>
+    <span class="sample-tag">No dataset linked yet</span>
+  </section>
+
+  <section class="organ-section" id="lungs" style="--accent:#E39BB8">
+    <span class="tag" style="color:#E39BB8">Respiratory</span>
+    <h2>Lungs</h2>
+    <p>Site of gas exchange and a key mucosal immune interface, frequently profiled in infection, allergy, and airway inflammation studies.</p>
+    <div class="stat-row">
+      <div class="stat"><div class="val">—</div><div class="lab">Peptides</div></div>
+      <div class="stat"><div class="val">—</div><div class="lab">Proteins</div></div>
+      <div class="stat"><div class="val">—</div><div class="lab">Samples</div></div>
+    </div>
+    <span class="sample-tag">No dataset linked yet</span>
+  </section>
+
+  <section class="organ-section" id="heart" style="--accent:#C24B45">
+    <span class="tag" style="color:#C24B45">Cardiovascular</span>
+    <h2>Heart</h2>
+    <p>Drives systemic circulation. Cardiac tissue proteomics is often used to study hypertrophy, ischemia, and metabolic remodeling.</p>
+    <div class="stat-row">
+      <div class="stat"><div class="val">—</div><div class="lab">Peptides</div></div>
+      <div class="stat"><div class="val">—</div><div class="lab">Proteins</div></div>
+      <div class="stat"><div class="val">—</div><div class="lab">Samples</div></div>
+    </div>
+    <span class="sample-tag">No dataset linked yet</span>
+  </section>
+
+  <section class="organ-section" id="liver" style="--accent:#c96b62">
+    <span class="tag" style="color:#c96b62">Metabolic</span>
+    <h2>Liver</h2>
+    <p>Central hub for metabolism, detoxification, and plasma protein synthesis. A high-yield tissue for both proteomic and immunopeptidomic profiling.</p>
+    <div class="stat-row">
+      <div class="stat"><div class="val">—</div><div class="lab">Peptides</div></div>
+      <div class="stat"><div class="val">—</div><div class="lab">Proteins</div></div>
+      <div class="stat"><div class="val">—</div><div class="lab">Samples</div></div>
+    </div>
+    <span class="sample-tag">No dataset linked yet</span>
+  </section>
+
+  <section class="organ-section" id="pancreas" style="--accent:#efab41">
+    <span class="tag" style="color:#efab41">Endocrine</span>
+    <h2>Pancreas</h2>
+    <p>Regulates blood glucose via insulin and glucagon secretion, and supplies digestive enzymes to the small intestine. Small and easily overlooked next to the liver in dissection.</p>
+    <div class="stat-row">
+      <div class="stat"><div class="val">—</div><div class="lab">Peptides</div></div>
+      <div class="stat"><div class="val">—</div><div class="lab">Proteins</div></div>
+      <div class="stat"><div class="val">—</div><div class="lab">Samples</div></div>
+    </div>
+    <span class="sample-tag">No dataset linked yet</span>
+  </section>
+
+  <section class="organ-section" id="spleen" style="--accent:#8C7BC9">
+    <span class="tag" style="color:#8C7BC9">Lymphoid</span>
+    <h2>Spleen</h2>
+    <p>Filters blood-borne antigen and houses distinct white pulp, marginal zone, and red pulp compartments — already mapped in the spatial immunopeptidomics atlas.</p>
+    <div class="stat-row">
+      <div class="stat"><div class="val">3</div><div class="lab">Regions profiled</div></div>
+      <div class="stat"><div class="val">✓</div><div class="lab">Dataset linked</div></div>
+      <div class="stat"><div class="val">H&amp;E</div><div class="lab">Imaging</div></div>
+    </div>
+    <a href="spleen-atlas.html#spleen" target="_blank" style="color:#8C7BC9; font-family:var(--mono); font-size:12px;">→ Open full spleen atlas</a>
+  </section>
+
+  <section class="organ-section" id="stomach" style="--accent:#D9A05B">
+    <span class="tag" style="color:#D9A05B">Digestive</span>
+    <h2>Stomach</h2>
+    <p>Initiates digestion via acid and enzymatic breakdown; the gastric mucosa is a common site for microbiome-interface and mucosal immunity research.</p>
+    <div class="stat-row">
+      <div class="stat"><div class="val">—</div><div class="lab">Peptides</div></div>
+      <div class="stat"><div class="val">—</div><div class="lab">Proteins</div></div>
+      <div class="stat"><div class="val">—</div><div class="lab">Samples</div></div>
+    </div>
+    <span class="sample-tag">No dataset linked yet</span>
+  </section>
+
+  <section class="organ-section" id="intestines" style="--accent:#D98FA0">
+    <span class="tag" style="color:#D98FA0">Digestive</span>
+    <h2>Intestines</h2>
+    <p>Handles nutrient absorption and hosts the largest population of immune cells in the body via gut-associated lymphoid tissue.</p>
+    <div class="stat-row">
+      <div class="stat"><div class="val">—</div><div class="lab">Peptides</div></div>
+      <div class="stat"><div class="val">—</div><div class="lab">Proteins</div></div>
+      <div class="stat"><div class="val">—</div><div class="lab">Samples</div></div>
+    </div>
+    <span class="sample-tag">No dataset linked yet</span>
+  </section>
+
+  <section class="organ-section" id="kidneys" style="--accent:#8B5A4A">
+    <span class="tag" style="color:#8B5A4A">Renal</span>
+    <h2>Kidneys</h2>
+    <p>Filter blood plasma to regulate fluid balance, electrolytes, and waste excretion. Paired, retroperitoneal organs commonly profiled in nephrotoxicity studies.</p>
+    <div class="stat-row">
+      <div class="stat"><div class="val">—</div><div class="lab">Peptides</div></div>
+      <div class="stat"><div class="val">—</div><div class="lab">Proteins</div></div>
+      <div class="stat"><div class="val">—</div><div class="lab">Samples</div></div>
+    </div>
+    <span class="sample-tag">No dataset linked yet</span>
+  </section>
+
+  <section class="organ-section" id="bladder" style="--accent:#D9C97A">
+    <span class="tag" style="color:#D9C97A">Urinary</span>
+    <h2>Bladder</h2>
+    <p>Stores urine prior to excretion. The urothelium is of interest in studies of urinary tract infection and mucosal barrier function.</p>
+    <div class="stat-row">
+      <div class="stat"><div class="val">—</div><div class="lab">Peptides</div></div>
+      <div class="stat"><div class="val">—</div><div class="lab">Proteins</div></div>
+      <div class="stat"><div class="val">—</div><div class="lab">Samples</div></div>
+    </div>
+    <span class="sample-tag">No dataset linked yet</span>
+  </section>
+</main>
+
+</body>
+</html>
