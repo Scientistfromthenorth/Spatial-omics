@@ -79,7 +79,7 @@
     <!-- Spleen -->
     <a href="organ-data.html#spleen" target="_blank">
       <g class="organ-group" data-organ="pancreas">
-        <path class="organ" fill="#efab41" d="M 133.0,40.0 Q 135.0,41.0 132.0,41.5 Q 135.0,42.0 132.5,42.5 Q 136.0,43.0 133.0,44.0 Q 135.0,45.0 133.5,45.5 Q 136.0,46.0 134.0,50.0 Q 136.0,54.0 134.5,54.0 Q 135.0,54.0 136.5,52.5 Q 138.0,51.0 138.0,47.0 Q 138.0,43.0 137.5,42.5 Q 137.0,42.0 137.0,41.5 Q 137.0,41.0 136.5,40.5 Q 136.0,40.0 135.0,40.0 Q 134.0,40.0 133.5,39.5 Q 133.0,39.0 131.5,39.0 Q 133.0,39.0 135.0,40.0 Z"/>
+        <path class="organ" fill="#8B5A4A" d="M "M172,192 Q184,190 186,204 Q188,218 176,222 Q164,224 162,210 Q160,196 172,192 Z"/>
         <g class="tooltip" transform="translate(162,42)">
           <rect x="-30" y="-11" width="60" height="18" rx="2.5"/>
           <text x="0" y="-1" text-anchor="middle">Spleen</text>
