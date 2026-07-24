@@ -46,10 +46,10 @@
       <g class="organ-group" data-organ="spleen">
         <path class="organ" fill="#8B5A4A"
           d="M 137,42
-             Q149,40 151,54
-             Q153,68 141,72
-             Q129,74 127,60
-             Q125,46 137,42 Z"/>
+         Q143,41 144,48
+         Q145,55 139,57
+         Q133,58 132,51
+         Q131,44 137,42 Z"/>
       <g class="tooltip" transform="translate(170,40)">
       <rect x="-30" y="-11" width="50" height="18" rx="2.5"/>
       <text x="0" y="-1" text-anchor="middle">Spleen</text>
