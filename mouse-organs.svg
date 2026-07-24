@@ -52,6 +52,17 @@
         </g>
       </g>
     </a>
+    <!-- SPLEEN2 -->
+    <a href="organ-data.html#intestines" target="_blank">
+      <g class="organ-group" data-organ="spleen">
+        <path class="organ" fill="#e7c0be" d="M 145.5,38.5 Q 142.0,39.0 139.0,35.5 Q 136.0,32.0 132.5,30.5 Q 129.0,29.0 126.5,29.0 Q 124.0,29.0 121.0,32.0 Q 118.0,35.0 114.0,35.5 Q 110.0,36.0 104.0,39.5 Z"/>
+        <g class="tooltip" transform="translate(116,12)">
+          <rect x="-27" y="-11" width="54" height="18" rx="2.5"/>
+          <text x="0" y="-1" text-anchor="middle">Spleen</text>
+          <text x="0" y="6" text-anchor="middle" class="sub">LYMPHOID</text>
+        </g>
+      </g>
+    </a>
 
     <!-- LIVER -->
     <a href="organ-data.html#liver" target="_blank">
